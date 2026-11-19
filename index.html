@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>La garde-robe de Frisko</title>
+
+    <meta name="description"
+          content="Découvrez les besoins du petit Frisko et participez à la préparation de son arrivée.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+
+            <div class="popsicle" aria-hidden="true">
+                <span></span>
+            </div>
+
+            <p class="eyebrow">BIENVENUE DANS NOTRE PETIT UNIVERS</p>
+
+            <h1>La garde-robe<br>de Frisko</h1>
+
+            <p class="hero-description">
+                Un petit bonhomme, un dressing qui se remplit...
+            </p>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- PHOTOS -->
+        <section class="photo-section" aria-label="Photos de Frisko">
+
+            <div class="photo-heading">
+                <p class="eyebrow">QUELQUES INSTANTS À PARTAGER</p>
+                <h2>Les petites aventures de Frisko</h2>
+            </div>
+
+            <div class="carousel" id="photo-carousel">
+
+                <button class="carousel-arrow carousel-prev"
+                        type="button"
+                        aria-label="Photo précédente">
+                    &#8249;
+                </button>
+
+                <div class="carousel-window">
+                    <div class="carousel-track">
+
+                        <figure class="carousel-slide">
+                            <img src="images/frisko-01.jpg"
+                                 alt="Photo de Frisko 1">
+                            <figcaption></figcaption>
+                        </figure>
+
+                        <figure class="carousel-slide">
+                            <img src="images/frisko-02.jpg"
+                                 alt="Photo de Frisko 2">
+                            <figcaption></figcaption>
+                        </figure>
+
+                        <figure class="carousel-slide">
+                            <img src="images/frisko-03.jpg"
+                                 alt="Photo de Frisko 3">
+                            <figcaption></figcaption>
+                        </figure>
+
+                        <figure class="carousel-slide">
+                            <img src="images/frisko-04.jpg"
+                                 alt="Photo de Frisko 4">
+                            <figcaption></figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+
+                <button class="carousel-arrow carousel-next"
+                        type="button"
+                        aria-label="Photo suivante">
+                    &#8250;
+                </button>
+
+            </div>
+
+            <div class="carousel-dots" aria-label="Choisir une photo"></div>
+
+        </section>
+
+
+        <!-- LISTE DE NAISSANCE -->
+        <section id="birth-list" class="intro-card">
+
+            <p class="eyebrow">POUR L'ARRIVÉE DE FRISKO</p>
+
+            <h2>Envie de le gâter ?</h2>
+
+            <p>
+                Nous avons préparé une petite liste de naissance
+                avec quelques idées pour son arrivée.
+            </p>
+
+            <a href="#" id="birth-list-link" class="button">
+                Découvrir notre liste de naissance ↗
+            </a>
+
+        </section>
+
+
+        <!-- INVENTAIRE -->
+        <section id="inventory">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">SON PETIT DRESSING</p>
+
+                <h2>De quoi l'habiller ?</h2>
+
+                <p>
+                    Vous préférez choisir vous-même un vêtement ?
+                    Voici ce dont nous avons encore besoin.
+                </p>
+
+            </div>
+
+
+            <div class="inventory-notice">
+                <strong>Attention aux SOLD OUT !</strong>
+
+                <p>
+                    Certaines tailles sont déjà bien remplies.
+                    Merci de vérifier les besoins avant vos achats.
+                </p>
+            </div>
+
+
+            <div id="inventory-status" aria-live="polite">
+                Chargement de l'inventaire...
+            </div>
+
+
+            <!-- NAVIGATION ENTRE LES VUES -->
+            <div class="view-navigation" aria-label="Organisation de l'inventaire">
+
+                <button class="view-button active"
+                        type="button"
+                        data-view="size">
+                    Par taille
+                </button>
+
+                <button class="view-button"
+                        type="button"
+                        data-view="type">
+                    Par vêtement
+                </button>
+
+            </div>
+
+
+            <!-- VUE PAR TAILLE -->
+            <div id="inventory-by-type" class="inventory-view"></div>
+
+            <!-- VUE PAR VÊTEMENT -->
+            <div id="inventory-by-size" class="inventory-view" hidden></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Une petite glace et beaucoup d'amour ❤️</p>
+        <span>La garde-robe de Frisko</span>
+    </footer>
+
+</body>
+</html>
