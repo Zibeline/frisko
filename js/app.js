@@ -214,6 +214,8 @@ function groupByType(inventory) {
         result[categoryNames[key]] = groups[key];
     });
 
+   console.log(result);
+
     return result;
 }
 
