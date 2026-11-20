@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" defer></script>
     <script src="js/app.js" defer></script>
 </head>
 
@@ -116,6 +117,24 @@
 
         </section>
 
+<section id="birth-gifts-section" class="birth-gifts-section">
+
+    <div class="section-heading">
+        <h2>La liste de naissance</h2>
+        <p>
+            Un petit coup de pouce pour préparer l'arrivée de Frisko.
+            Choisissez un cadeau ou participez à l'un de nos projets.
+        </p>
+    </div>
+
+    <div id="birth-gifts-status" class="birth-gifts-status">
+        Chargement des cadeaux...
+    </div>
+
+    <div id="birth-gifts" class="birth-gifts-grid"></div>
+
+</section>
+
 
         <!-- INVENTAIRE -->
         <section id="inventory">
@@ -166,12 +185,13 @@
 
             </div>
 
+            <div id="inventory-nav"></div>
 
             <!-- VUE PAR TAILLE -->
-            <div id="inventory-by-type" class="inventory-view"></div>
+            <div id="inventory-by-size" class="inventory-view"></div>
 
             <!-- VUE PAR VÊTEMENT -->
-            <div id="inventory-by-size" class="inventory-view" hidden></div>
+            <div id="inventory-by-type" class="inventory-view" hidden></div>
 
         </section>
 
